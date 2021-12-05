@@ -1,0 +1,18 @@
+Python 3.9
+Libraries:
+- Tensorflow 2.5
+- Keras
+- Google
+- Matplotlib
+- panda
+- pillow
+- numpy
+- cv2
+Installation
+- pip install tensorflow
+- pip install keras
+- pip install google, beautifulsoup4
+- pip install numpy
+- pip install matplotlib
+- pip install pandas
+- pip install Pillow
