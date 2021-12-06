@@ -1,3 +1,6 @@
+Anaconda
+conda install ipykernel
+conda create -n {nameOfEnv} python=3.7 pandas jupyter seaborn scikit-learn keras tensorflow
 Python 3.9
 Libraries:
 - Tensorflow 2.5
@@ -16,3 +19,4 @@ Installation
 - pip install matplotlib
 - pip install pandas
 - pip install Pillow
+IDE: VSCode
