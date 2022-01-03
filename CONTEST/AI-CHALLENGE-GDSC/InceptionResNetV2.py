@@ -15,7 +15,7 @@ from keras.preprocessing.image import ImageDataGenerator
 import numpy as np
 import matplotlib.pyplot as plt
 from PIL import Image
-import pandas as pd
+import panda as pd
 
 # Reading the data
 training_csv = pd.read_csv('../input/gdscaidataset/trainLabels.csv')
