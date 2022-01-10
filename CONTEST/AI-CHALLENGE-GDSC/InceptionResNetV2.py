@@ -15,7 +15,7 @@ from keras.preprocessing.image import ImageDataGenerator
 import numpy as np
 import matplotlib.pyplot as plt
 from PIL import Image
-import panda as pd
+import pandas as pd
 
 # Reading the data
 training_csv = pd.read_csv('../input/gdscaidataset/trainLabels.csv')
@@ -51,9 +51,6 @@ training_labels = np_utils.to_categorical(training_labels, 10)
 print("training_images shape:", training_images.shape)
 print("testing_images shape:", testing_images.shape)
 
-baseMapNum = 2
-weight_decay = 1e-4
-
 # Add layers
 
 model = models.Sequential()
@@ -61,13 +58,6 @@ model.add(layers.UpSampling2D((7, 7)))
 model.add(conv_base)
 
 model.add(layers.Flatten())
-# model.add(layers.BatchNormalization())
-# model.add(layers.Dense(128, activation='elu'))
-# model.add(layers.Dropout(0.5))
-# model.add(layers.BatchNormalization())
-# model.add(layers.Dense(64, activation='elu'))
-# model.add(layers.Dropout(0.5))
-# model.add(layers.BatchNormalization())
 
 model.add(Dense(4096, activation='elu', kernel_constraint=maxnorm(3)))
 model.add(BatchNormalization())
