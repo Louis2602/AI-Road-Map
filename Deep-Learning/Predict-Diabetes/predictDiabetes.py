@@ -1,5 +1,6 @@
 from numpy import loadtxt
 import tensorflow as tf
+
 from keras.models import Sequential
 from keras.models import load_model
 from keras.layers import Dense, Dropout, BatchNormalization
